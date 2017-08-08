@@ -1,0 +1,11 @@
+.col-striped col:nth-child(2) {
+    background-color: yellow;
+}
+
+thead tr {
+    height: 3em;
+}
+
+thead tr th{
+    transform: rotate(0deg);
+}
