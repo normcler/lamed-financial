@@ -1,65 +1,70 @@
-#lamed-banner {
-  /*font-family: 'Marcellus SC', serif;*/
+#page-container {
+  margin: 0 auto;
+  box-sizing: border-box;
   font-family: 'Bellefair', serif;
+  font-weight: 600;
+}
+#lamed-banner {
   background-color: FireBrick;
   color: Goldenrod;
-  font-size: 4em;
-  padding: 0.5em;
+  font-size: 2em;
+  padding: 0.4em;
+  border: 2px solid Goldenrod;
+  border-radius: 0.5em;
 }
 #lamed-banner strong {
-  width: 10em;
-  height: 10em;
-  font-size: 5em;
   background-color: Goldenrod;
   color: Firebrick;
   margin: auto;
   border: 1px solid Firebrick;
+  padding: 0.2em;
+  border-radius: 0.3em;
 }
-#page-container {
-  margin: 0 auto;
-  box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
-  font-weight: 600;
-}
-#logo-container {
-  display: flex;
-  justify-contents: center;
-}
-#logo-container img {
-  margin: 0 auto;
-  height: 51px;
-  width: 125px;
-}
-#form-container {
-  border: 1px solid LightSteelBlue;
+/*#form-container {
+    max-width: 560px;
+    margin: auto;
+    padding: 2em;
+    display: flex;*/
+#sign-in-form {
   max-width: 560px;
+  display: flex;
+  flex-direction: column;
   margin: auto;
-  padding: 2em;
 }
-#form-container #sign-in {
+#sign-in-form #sign-in {
   display: block;
-  font-size: 2em;
+  font-size: 1.4em;
+  font-weight: 500;
 }
-#form-container input {
-  width: 100%;
-}
-#form-container span {
+#sign-in-form span {
   margin-top: 2rem;
   display: inline-block;
 }
-#span-container {
+#sign-in-form .inp-field {
+  display: block;
+  width: 80%;
+  padding: 1em;
+  border-radius: 2em;
+}
+#bottom-row {
   display: flex;
   justify-content: space-between;
 }
-#span-container #forgot {
+#forgot {
   color: blue;
-}
-#btn-submit {
-  background-color: gold;
+  margin-top: 1em;
 }
 .btn {
-  padding: 1em;
+  width: 20%;
+  background-color: Goldenrod;
+  font-family: 'Bellefair', serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: Firebrick;
+  padding: 0.2em;
   margin-top: 2em;
+  margin-right: 20%;
+  border-radius: 1em;
 }
 #new {
   margin: auto;

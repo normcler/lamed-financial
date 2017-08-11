@@ -15,39 +15,27 @@ Designer: N. S. Clerman,
   <body>
     <div id="page-container">
       <div id="lamed-banner">
-        <strong>L</strong> <span>Lamed Financial Asset Analysis<span>
+        <strong>LARC</strong> <span>Lamed Asset Research Consultants<span>
       </div>
 
-      <div id="form-container">
-        <span id="sign-in">Sign in</span>
+      <!--<div id="form-container">-->
         <form id="sign-in-form">
-          Email (phone for mobile accounts)
+          <span id="sign-in">Sign in to larc.com</span>
           <br>
-          <input type="text" name="email" />
+          <input type="text" class="inp-field" name="email"
+                 placeholder="E-mail address" autofocus/>
           <br>
-          <div id="span-container">
-            <span>Password</span>
-            <span id="forgot">Forgot your password?</span>
+          <br>
+          <input type="password" class="inp-field" name="password" placeholder="Password"/>
+          <div id="bottom-row">
+            <a id="forgot" href="#">Forgot your password?</a>
+            <input  class="btn" id="btn-submit" type="submit" value="Sign in"/>
           </div>
-          <br>
-          <input type="password" name="password" />
-          <input  class="btn" id="btn-submit" type="submit" value="Sign in"/>
-          <br>
-          <span id="new">New to Amazon</span>
-          <br>
-          <input class = "btn" type="submit" value="Create your Amazon account" />
         </form>
-        <hr>
-      </div>
+        <div id="span-container">
+        </div>
+      <!--</div>-->
       <hr>
-      <footer>
-        <nav>
-          <span><a href="#">Conditions of Use</a></span>
-          <span><a href="#">Notice of Use</a></span>
-          <span><a href="#">Help</a></span>
-        </nav>
-        <span>&copy 1996-2016, Amazon.com, Inc. or its affiliates</span>
-      </footer>
     </div>
   </body>
 </html>
