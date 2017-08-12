@@ -1,11 +1,16 @@
+caption {
+  font-size: 2em;
+  font-weigth: 700;
+}
 .col-striped col:nth-child(2) {
-    background-color: yellow;
+  background-color: yellow;
 }
-
 thead tr {
-    height: 3em;
+  height: 3em;
 }
-
-thead tr th{
-    transform: rotate(0deg);
+thead tr th {
+  transform: rotate(0deg);
+}
+td {
+  text-align: right;
 }
