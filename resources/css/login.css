@@ -9,14 +9,14 @@
   color: Goldenrod;
   font-size: 2em;
   padding: 0.4em;
-  border: 2px solid Goldenrod;
+  border: 0.01em solid black;
   border-radius: 0.5em;
 }
-#lamed-banner strong {
+#lamed-banner #larc-abbr {
   background-color: Goldenrod;
   color: Firebrick;
   margin: auto;
-  border: 1px solid Firebrick;
+  border: 0.01px solid white;
   padding: 0.2em;
   border-radius: 0.3em;
 }
@@ -62,7 +62,7 @@
   font-weight: bold;
   color: Firebrick;
   padding: 0.2em;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-right: 20%;
   border-radius: 1em;
 }
@@ -93,4 +93,12 @@ nav a {
 footer > span {
   display: block;
   font-size: 0.8em;
+}
+@media screen and (max-width: 600px) {
+  #larc-name {
+    display: none;
+  }
+  #larc-abbr {
+    margin: 0em auto;
+  }
 }

@@ -15,7 +15,8 @@ Designer: N. S. Clerman,
   <body>
     <div id="page-container">
       <div id="lamed-banner">
-        <strong>LARC</strong> <span>Lamed Asset Research Consultants<span>
+        <span id="larc-abbr"><strong>LARC</strong></span>
+        <span id="larc-name">Lamed Asset Research Consultants<span>
       </div>
 
       <!--<div id="form-container">-->
@@ -23,13 +24,15 @@ Designer: N. S. Clerman,
           <span id="sign-in">Sign in to larc.com</span>
           <br>
           <input type="text" class="inp-field" name="email" id="e-mail" 
-                 placeholder="E-mail address" autofocus/>
+                 placeholder="E-mail address" autofocus="true" tabindex=1/>
           <br>
           <br>
-          <input type="password" class="inp-field" name="password" placeholder="Password"/>
+          <input type="password" class="inp-field" name="password"
+                 placeholder="Password" tabindex=2/>
           <div id="bottom-row">
-            <a id="forgot" href="#">Forgot your password?</a>
-            <input  class="btn" id="btn-submit" type="submit" value="Sign in"/>
+            <a id="forgot" href="#" tabindex=4>Forgot your password?</a>
+            <input  class="btn" id="btn-submit" type="submit" value="Sign in"
+                    tabindex=3/>
           </div>
         </form>
         <div id="span-container">
