@@ -17,7 +17,35 @@ Designer: N. S. Clerman,
     <link href="./resources/css/input.css" type="text/css" rel="stylesheet"/>
   </head>
   <body>
-    <h2>Portfolio Holdings</h2>
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+
+          <h3>Portfolio</h3>
+          <div id="portfolio-table">
+            <div class="tr">
+              <span class="header-td">Delete</span>
+              <span class="header-td">Ticker</span>
+              <span class="header-td">Shares</span>
+            </div>
+            <!-- <form class="tr" method="post" action="blah.html">-->
+            <form class="tr input-form">
+              <div>
+                <span class="td"><input type="checkbox"/></span>
+                <span class="td"><input type="text"/></span>
+                <span class="td"><input type="number"/></span>
+              </div>
+              <div>
+                <span class="td"><input type="checkbox"/></span>
+                <span class="td"><input type="text"/></span>
+                <span class="td"><input type="number"/></span>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </main>
 <!-- JQuery script-->    
     <script
        src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -26,5 +54,8 @@ Designer: N. S. Clerman,
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="./resources/scripts/input.js"></script>
+
   </body>
 </html>
