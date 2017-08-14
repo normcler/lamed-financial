@@ -35,10 +35,16 @@ Designer: N. S. Clerman,
                 <span class="td"><input type="text"/></span>
                 <span class="td"><input type="number"/></span>
               </div>
-              <div>
-                <span class="td"><input type="checkbox"/></span>
-                <span class="td"><input type="text"/></span>
-                <span class="td"><input type="number"/></span>
+
+              <!-- Populate the form with the fields-->
+              <div ng-app="input">
+                <div ng-controller="inputController">
+                  <div ng-repeat="holding in holdings">
+                    <span class="td"><input type="checkbox"></span>
+                    <span class="td"><input type="text"></span>
+                    <span class="td"><input type="text"></span>
+                  </div>
+                </div>
               </div>
             </form>
           </div>

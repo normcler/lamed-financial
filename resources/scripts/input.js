@@ -1,8 +1,11 @@
-/*var addColumns = function () {
-    append('<span class="td"><input type="checkbox"/></span>');
-    append('<span class="td"><input type="text"/></span>');
-    append('<span class="td"><input type="number"/></span>');
-}*/
+
+/*
+  Create an array of 25 object literals for the data entry.
+*/
+var t = [];
+for (var i=0; i<25; i++) {
+    t.push({checked: false, ticker: "", shares: ""});
+}
 
 ( function() {
     "use strict";
@@ -11,21 +14,25 @@
 
     angular.module("input").
         controller("inputController", function($scope) {
+            // holdings - the object literals.
+            $scope.holdings = t;
         });
+
     // This is a custom directive that I've defined, not something built into
     // angular. I can stitch the div into my code by putting <my-directive>
-
     angular.module("input").
-        directive("myDirective",function () {
+        directive("populateForm",function () {
             return {
                 template: "<div>This is a custom directive</div>"
             }
         });
 })();
 
+/*
+Original jQuery code used to populate the form
+*/
 
-
-var populateTable = function () {
+/*var populateTable = function () {
     var inputForm = $(".input-form")
     for (var jRow = 0; jRow < 25; jRow++) {
         var d = document.createElement("div");
@@ -49,4 +56,4 @@ var populateTable = function () {
     }
 }
 
-populateTable();
+populateTable();*/
