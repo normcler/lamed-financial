@@ -23,24 +23,19 @@ Designer: N. S. Clerman,
 
           <h3>Portfolio</h3>
           <div id="portfolio-table">
-            <div class="tr">
+            <div class="tr" id="header-row">
               <span class="header-td">Delete</span>
               <span class="header-td">Ticker</span>
               <span class="header-td">Shares</span>
             </div>
             <!-- <form class="tr" method="post" action="blah.html">-->
             <form class="tr input-form">
-              <div>
-                <span class="td"><input type="checkbox"/></span>
-                <span class="td"><input type="text"/></span>
-                <span class="td"><input type="number"/></span>
-              </div>
 
               <!-- Populate the form with the fields-->
               <div ng-app="input">
                 <div ng-controller="inputController">
                   <div ng-repeat="holding in holdings">
-                    <span class="td"><input type="checkbox"></span>
+                    <span class="td" id="del-checkbox"><input type="checkbox"></span>
                     <span class="td"><input type="text"></span>
                     <span class="td"><input type="text"></span>
                   </div>
