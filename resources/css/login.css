@@ -1,3 +1,11 @@
+.larc-color {
+  background-color: FireBrick;
+  color: Goldenrod;
+}
+.larc-color-reversed {
+  background-color: Goldenrod;
+  color: FireBrick;
+}
 #page-container {
   margin: 0 auto;
   box-sizing: border-box;
@@ -14,7 +22,7 @@
 }
 #lamed-banner #larc-abbr {
   background-color: Goldenrod;
-  color: Firebrick;
+  color: FireBrick;
   margin: auto;
   border: 0.01px solid white;
   padding: 0.2em;
@@ -33,7 +41,7 @@
 }
 #sign-in-form #sign-in {
   display: block;
-  font-size: 1.4em;
+  font-size: 2.0em;
   font-weight: 500;
 }
 #sign-in-form span {
@@ -57,14 +65,21 @@
 .btn {
   width: 20%;
   background-color: Goldenrod;
+  color: FireBrick;
   font-family: 'Bellefair', serif;
-  font-size: 1.2em;
   font-weight: bold;
-  color: Firebrick;
   padding: 0.2em;
   margin-top: 1em;
   margin-right: 20%;
   border-radius: 1em;
+}
+#btn-submit {
+  font-size: 1.8em;
+}
+#btn-submit:hover {
+  background-color: FireBrick;
+  color: Goldenrod;
+  box-shadow: 0.1em 0.1em Goldenrod;
 }
 #new {
   margin: auto;
