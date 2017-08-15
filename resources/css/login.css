@@ -15,6 +15,7 @@
 #lamed-banner {
   background-color: FireBrick;
   color: Goldenrod;
+  font-family: 'Bellefair', serif;
   font-size: 2em;
   padding: 0.4em;
   border: 0.01em solid black;
@@ -33,6 +34,9 @@
     margin: auto;
     padding: 2em;
     display: flex;*/
+.panel-heading h3 {
+  font-size: 2em;
+}
 #sign-in-form {
   max-width: 560px;
   display: flex;
