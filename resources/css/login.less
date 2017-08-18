@@ -11,6 +11,26 @@
     color: FireBrick;
 }
 
+.nav {
+    margin-left: -25em;
+}
+
+.nav>li {
+    display: inline-block;
+    >a {
+        .larc-color-reversed;
+        padding: 0.1em 0.4em;
+    }
+}
+
+.nav>li>a:hover {
+    .larc-color;
+}
+
+.nav>li:hover {
+    box-shadow: 0.15em 0.15em rgba(218, 165, 32, 0.5);
+}
+
 #page-container {
     margin: 0 auto;
     box-sizing: border-box;
@@ -19,7 +39,7 @@
     max-width: 560px;
 }
 
-#lamed-banner {
+.larc-theme {
     .larc-color;
     font-family: @larc-font;
     font-size: 2em;
@@ -30,9 +50,22 @@
         .larc-color-reversed;
         margin: auto;
         border: 0.01px solid white;
-        padding: 0.2em;
+        padding: 0.1em;
         border-radius: 0.3em;
     }
+    li {
+        .larc-color-reversed;
+        font-size: 0.7em;
+        font-weight: bold;
+        margin: 0.0 0.5em;
+        border: 0.01px solid white;
+        padding: 0.1em;
+        border-radius: 0.3em;
+    }
+}
+
+ul {
+    float: left;
 }
 
 .panel-heading h3 {

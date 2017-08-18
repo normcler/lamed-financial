@@ -6,6 +6,24 @@
   background-color: Goldenrod;
   color: FireBrick;
 }
+.nav {
+  margin-left: -25em;
+}
+.nav > li {
+  display: inline-block;
+}
+.nav > li > a {
+  background-color: Goldenrod;
+  color: FireBrick;
+  padding: 0.1em 0.4em;
+}
+.nav > li > a:hover {
+  background-color: FireBrick;
+  color: Goldenrod;
+}
+.nav > li:hover {
+  box-shadow: 0.15em 0.15em rgba(218, 165, 32, 0.5);
+}
 #page-container {
   margin: 0 auto;
   box-sizing: border-box;
@@ -13,7 +31,7 @@
   font-weight: 600;
   max-width: 560px;
 }
-#lamed-banner {
+.larc-theme {
   background-color: FireBrick;
   color: Goldenrod;
   font-family: 'Bellefair', serif;
@@ -22,13 +40,26 @@
   border: 0.01em solid black;
   border-radius: 0.5em;
 }
-#lamed-banner #larc-abbr {
+.larc-theme #larc-abbr {
   background-color: Goldenrod;
   color: FireBrick;
   margin: auto;
   border: 0.01px solid white;
-  padding: 0.2em;
+  padding: 0.1em;
   border-radius: 0.3em;
+}
+.larc-theme li {
+  background-color: Goldenrod;
+  color: FireBrick;
+  font-size: 0.7em;
+  font-weight: bold;
+  margin: 0.0 0.5em;
+  border: 0.01px solid white;
+  padding: 0.1em;
+  border-radius: 0.3em;
+}
+ul {
+  float: left;
 }
 .panel-heading h3 {
   font-size: 2em;
