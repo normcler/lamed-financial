@@ -1,43 +1,23 @@
-<!DOCTYPE html>
-<!--
-Purpose:
-
-Designer: N. S. Clerman,
--->
 <html lang="en">
   <head>
+    <title>LARC | Fund Overlap</title>
     <meta charset="utf-8"/>
-    <title>LARC | Sign In</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bellefair|Marcellus+SC" rel="stylesheet">
+
     <!-- Bootstrap links-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
 
-    <link href="./resources/css/login.css" type="text/css" rel="stylesheet" />
+    <link href="./resources/css/subscribe.css" type="text/css" rel="stylesheet"/>
   </head>
   <body>
-    <div class ="larc-theme" class="jumbotron">
-      <div>
-        <span id="larc-abbr"><strong>LARC</strong></span>
-        <span id="larc-name">Lamed Asset Research Consultants</span>
-      </div>
+    <div id="lamed-banner" class="jumbotron">
+      <span id="larc-abbr"><strong>LARC</strong></span>
+      <span id="larc-name">Lamed Asset Research Consultants</span>
     </div>
-    <nav class="larc-theme" role="navigation">
-        <ul class="nav nav-pills">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">Sign Up</a></li>
-          <li><a href="index.html">Members: Sign In</a></li>
-          <li><a href="index.html">Member Service</a></li>
-          <li><a href="index.html">About</a></li>
-        </ul>
-    </nav>
 
-    <div class="container-fluid" id="panel-container" ng-app="loginApp">
+    <div class="container-fluid" id="panel-container" ng-app="subscribeApp">
       <div class="row">
         <div class="col-xs-offset-2 col-xs-5">
           <div class = "panel" id="page-container">
@@ -46,17 +26,27 @@ Designer: N. S. Clerman,
             </div>
 
             <div class="panel-body">
-              <form id="sign-in-form" ng-controller="LoginController"
-                    ng-submit="setData(userData)" name="loginForm">
+              <form id="subscribe-form" ng-controller="SubscribeController"
+                    ng-submit="setData(subscriberData)" name="subscribeForm">
+
+                <input type="text" class="form-control" name="firstName"
+                       placeholder="First Name" autofocus="true"
+                       ng-model="subscriberData.firstName"
+                       required tabindex=1/>
+
+                <input type="text" class="form-control" name="lastName"
+                       placeholder="First Name" autofocus="true"
+                       ng-model="subscriberData.lastName"
+                       required tabindex=1/>
 
                 <input type="text" class="form-control" name="email"
                        placeholder="E-mail address" autofocus="true"
-                       ng-model="userData.email"
+                       ng-model="subscriberData.email"
                        required tabindex=1/>
                 <br>
                 <br>
                 <input type="password" class="form-control" name="password"
-                       ng-model="userData.password" placeholder="Password"
+                       ng-model="subscriberData.password" placeholder="Password"
                        required tabindex=2/>
                 <div id="bottom-row">
                   <a id="forgot" href="#" tabindex=4>Forgot your password?</a>
@@ -71,7 +61,9 @@ Designer: N. S. Clerman,
 
       <hr>
     </div>
-    <!-- JQuery script-->    
+
+
+<!-- JQuery script-->    
     <script
        src="https://code.jquery.com/jquery-3.2.1.min.js"
        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -83,7 +75,5 @@ Designer: N. S. Clerman,
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
 
-    <script src="./resources/scripts/login.js"></script>
-
+    <script src="./resources/scripts/subscribe.js"></script>
   </body>
-</html>
