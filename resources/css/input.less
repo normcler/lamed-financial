@@ -1,3 +1,32 @@
+@larc-font: 'Bellefair', serif;
+// @larc-font: 'Marcellus SC', serif;
+
+.larc-color {
+    background-color: FireBrick;
+    color: Goldenrod;
+}
+
+.larc-color-reversed {
+    background-color: Goldenrod;
+    color: FireBrick;
+}
+
+#lamed-banner {
+    .larc-color;
+    font-family: @larc-font;
+    font-size: 2em;
+    padding: 0.4em;
+    border: 0.01em solid black;
+    border-radius: 0.5em;
+    #larc-abbr {
+        .larc-color-reversed;
+        margin: auto;
+        border: 0.01px solid white;
+        padding: 0.2em;
+        border-radius: 0.3em;
+    }
+}
+
 main {
     color: black;
     font-size: 1em;
@@ -13,15 +42,16 @@ span.td
    padding-right: 2em;
 }
 
-#header-row {
-   display: flex;
-   justify-content: space-between;
+#header-row span:first-child {
+     text-align: left;
 }
 
+#header-row span:nth-child(2) {
+     padding-left: 1em;
+}
 
-span.header-td {
-    display: table-cell;
-    text-align: center;
+#header-row span:nth-child(3) {
+     padding-left: 11em;
 }
 
 div#portfolio-table 
@@ -36,4 +66,29 @@ form.tr, div.tr
 {
     display:table-row;
 }
-    
+
+#button-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#btn-submit {
+    font-size: 1.8em;
+}
+
+.btn {
+    width: 20%;
+    .larc-color-reversed;
+    font-family: @larc-font;
+    font-weight: bold;
+    padding: 0.2em;
+    margin-top: 1em;
+    margin-right: 20%;
+    border-radius: 1em;
+}
+
+#btn-submit:hover {
+    .larc-color;
+    box-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.25);
+}

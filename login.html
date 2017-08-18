@@ -10,7 +10,6 @@ Designer: N. S. Clerman,
     <title>Login</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="./resources/css/login.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bellefair|Marcellus+SC" rel="stylesheet">
     <!-- Bootstrap links-->
@@ -19,14 +18,22 @@ Designer: N. S. Clerman,
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
 
+    <link href="./resources/css/login.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
-    <div id="lamed-banner" class="jumbotron">
+    <div id="lamed-banner" class="jumbotron" role="navigation">
       <span id="larc-abbr"><strong>LARC</strong></span>
-      <span id="larc-name">Lamed Asset Research Consultants<span>
+      <span id="larc-name">Lamed Asset Research Consultants</span>
+      <ul class="nav nav-pill">
+        <li><a href="index.html">Home</li>
+        <li>Sign Up</li>
+        <li>Members: Log In</li>
+        <li>Member Service</li>
+        <li>About</li>
+      </ul>
     </div>
 
-    <div class="container-fluid" id="panel-container">
+    <div class="container-fluid" id="panel-container" ng-app="loginApp">
       <div class="row">
         <div class="col-xs-offset-2 col-xs-5">
           <div class = "panel" id="page-container">
@@ -35,13 +42,18 @@ Designer: N. S. Clerman,
             </div>
 
             <div class="panel-body">
-              <form id="sign-in-form">
-                <input type="text" class="inp-field" name="email" id="e-mail" 
-                       placeholder="E-mail address" autofocus="true" tabindex=1/>
+              <form id="sign-in-form" ng-controller="LoginController"
+                    ng-submit="setData(userData)" name="loginForm">
+
+                <input type="text" class="form-control" name="email"
+                       placeholder="E-mail address" autofocus="true"
+                       ng-model="userData.email"
+                       required tabindex=1/>
                 <br>
                 <br>
-                <input type="password" class="inp-field" name="password"
-                       placeholder="Password" tabindex=2/>
+                <input type="password" class="form-control" name="password"
+                       ng-model="userData.password" placeholder="Password"
+                       required tabindex=2/>
                 <div id="bottom-row">
                   <a id="forgot" href="#" tabindex=4>Forgot your password?</a>
                   <input  class="btn" id="btn-submit" type="submit" value="Sign in"
@@ -63,6 +75,9 @@ Designer: N. S. Clerman,
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
 
     <script src="./resources/scripts/login.js"></script>
 

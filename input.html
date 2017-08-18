@@ -17,33 +17,58 @@ Designer: N. S. Clerman,
     <link href="./resources/css/input.css" type="text/css" rel="stylesheet"/>
   </head>
   <body>
+    <div id="lamed-banner" class="jumbotron">
+      <span id="larc-abbr"><strong>LARC</strong></span>
+      <span id="larc-name">Lamed Asset Research Consultants</span>
+    </div>
+
     <main class="container-fluid">
       <div class="row">
         <div class="col-md-4 col-md-offset-2">
 
-          <h3>Portfolio</h3>
-          <div id="portfolio-table">
-            <div class="tr" id="header-row">
-              <span class="header-td">Delete</span>
-              <span class="header-td">Ticker</span>
-              <span class="header-td">Shares</span>
+      <div class="row">
+        <div class="col-xs-offset-2 col-xs-5">
+          <div class = "panel" id="page-container">
+            <div class="panel-heading">
+              <h3>Portfolio</h3>
             </div>
-            <!-- <form class="tr" method="post" action="blah.html">-->
-            <form class="tr input-form">
-
-              <!-- Populate the form with the fields-->
-              <div ng-app="input">
-                <div ng-controller="inputController">
-                  <div ng-repeat="holding in holdings">
-                    <span class="td" id="del-checkbox"><input type="checkbox"></span>
-                    <span class="td"><input type="text"></span>
-                    <span class="td"><input type="text"></span>
-                  </div>
+            
+            <div class="panel-body">
+              <div id="portfolio-table">
+                <div class="tr" id="header-row">
+                  <span class="header-td">Delete</span>
+                  <span class="header-td">Ticker</span>
+                  <span class="header-td">Shares</span>
                 </div>
+                <!-- <form class="tr" method="post" action="blah.html">-->
+                <form class="tr input-form">
+
+                  <!-- Populate the form with the fields-->
+
+                  <div ng-app="input">
+                    <div ng-controller="inputController">
+                      <div ng-app="input" ng-controller="inputController"
+                           ng-repeat="holding in holdings">
+                        <span class="td" id="del-checkbox">
+                          <input type="checkbox" ng-model="holding.checked"></span>
+                        <span class="td"><input type="text"
+                                                ng-model="holding.ticker"></span>
+                        <span class="td"><input type="text"
+                                                ng-model="holding.shares"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="button-row">
+                    <input  class="btn" id="btn-submit" type="submit" value="Save"
+                            tabindex=3/>
+                  </div>
+                </form>
+
               </div>
-            </form>
+            </div>
           </div>
         </div>
+      </div>
 
       </div>
     </main>

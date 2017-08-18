@@ -16,6 +16,7 @@
     box-sizing: border-box;
     font-family: @larc-font;
     font-weight: 600;
+    max-width: 560px;
 }
 
 #lamed-banner {
@@ -39,7 +40,6 @@
 }
 
 #sign-in-form {
-    max-width: 560px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -51,12 +51,6 @@
     span {
         margin-top: 2rem;
         display: inline-block;
-    }
-    .inp-field {
-        display: block;
-        width: 80%;
-        padding: 1em;
-        border-radius: 2em;
     }
 }
 
@@ -91,7 +85,7 @@
 
 #btn-submit:hover {
     .larc-color;
-    box-shadow: 0.1em 0.1em Goldenrod;
+    box-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.25);
 }
 
 #new {
@@ -125,6 +119,14 @@ nav {
 footer>span {
     display: block;
     font-size: 0.8em;
+}
+
+.form-control {
+    font-size: 1.2em;
+    display: block;
+    width: 80%;
+    padding: 1em;
+    border-radius: 2em;
 }
 
 @media screen and (max-width: 600px) {

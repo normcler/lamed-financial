@@ -1,3 +1,28 @@
+.larc-color {
+  background-color: FireBrick;
+  color: Goldenrod;
+}
+.larc-color-reversed {
+  background-color: Goldenrod;
+  color: FireBrick;
+}
+#lamed-banner {
+  background-color: FireBrick;
+  color: Goldenrod;
+  font-family: 'Bellefair', serif;
+  font-size: 2em;
+  padding: 0.4em;
+  border: 0.01em solid black;
+  border-radius: 0.5em;
+}
+#lamed-banner #larc-abbr {
+  background-color: Goldenrod;
+  color: FireBrick;
+  margin: auto;
+  border: 0.01px solid white;
+  padding: 0.2em;
+  border-radius: 0.3em;
+}
 main {
   color: black;
 }
@@ -5,9 +30,9 @@ caption {
   font-size: 2em;
   font-weigth: 700;
 }
-.col-striped col:nth-child(2) {
-  background-color: yellow;
-}
+/*.col-striped col:nth-child(2) {
+    background-color: yellow;
+}*/
 thead tr {
   height: 3em;
 }
@@ -16,4 +41,8 @@ thead tr th {
 }
 td {
   text-align: right;
+}
+tbody tr td:first-child {
+  text-align: left;
+  font-weight: bold;
 }

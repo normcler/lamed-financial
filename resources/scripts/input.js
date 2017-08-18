@@ -17,15 +17,6 @@ for (var i=0; i<25; i++) {
             // holdings - the object literals.
             $scope.holdings = t;
         });
-
-    // This is a custom directive that I've defined, not something built into
-    // angular. I can stitch the div into my code by putting <my-directive>
-    angular.module("input").
-        directive("populateForm",function () {
-            return {
-                template: "<div>This is a custom directive</div>"
-            }
-        });
 })();
 
 /*

@@ -1,3 +1,28 @@
+.larc-color {
+  background-color: FireBrick;
+  color: Goldenrod;
+}
+.larc-color-reversed {
+  background-color: Goldenrod;
+  color: FireBrick;
+}
+#lamed-banner {
+  background-color: FireBrick;
+  color: Goldenrod;
+  font-family: 'Bellefair', serif;
+  font-size: 2em;
+  padding: 0.4em;
+  border: 0.01em solid black;
+  border-radius: 0.5em;
+}
+#lamed-banner #larc-abbr {
+  background-color: Goldenrod;
+  color: FireBrick;
+  margin: auto;
+  border: 0.01px solid white;
+  padding: 0.2em;
+  border-radius: 0.3em;
+}
 main {
   color: black;
   font-size: 1em;
@@ -9,13 +34,14 @@ span.td {
 #del-checkbox {
   padding-right: 2em;
 }
-#header-row {
-  display: flex;
-  justify-content: space-between;
+#header-row span:first-child {
+  text-align: left;
 }
-span.header-td {
-  display: table-cell;
-  text-align: center;
+#header-row span:nth-child(2) {
+  padding-left: 1em;
+}
+#header-row span:nth-child(3) {
+  padding-left: 11em;
 }
 div#portfolio-table {
   display: table;
@@ -25,4 +51,28 @@ div#portfolio-table {
 form.tr,
 div.tr {
   display: table-row;
+}
+#button-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#btn-submit {
+  font-size: 1.8em;
+}
+.btn {
+  width: 20%;
+  background-color: Goldenrod;
+  color: FireBrick;
+  font-family: 'Bellefair', serif;
+  font-weight: bold;
+  padding: 0.2em;
+  margin-top: 1em;
+  margin-right: 20%;
+  border-radius: 1em;
+}
+#btn-submit:hover {
+  background-color: FireBrick;
+  color: Goldenrod;
+  box-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.25);
 }
