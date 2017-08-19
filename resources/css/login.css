@@ -6,9 +6,9 @@
   background-color: Gold;
   color: DarkSlateGray;
 }
-.nav {
-  margin-left: -25em;
-}
+/*.nav {
+    margin-left: -25em;
+}*/
 .nav > li {
   display: inline-block;
 }
@@ -58,9 +58,6 @@
   padding: 0.1em;
   border-radius: 0.3em;
 }
-ul {
-  float: left;
-}
 .panel-heading h3 {
   font-size: 2em;
 }
@@ -91,7 +88,8 @@ ul {
 #btn-submit {
   font-size: 1.8em;
 }
-#btn-submit:hover {
+#btn-submit:hover,
+#btn-submit:focus {
   background-color: Gold;
   color: DarkSlateGray;
   box-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.25);

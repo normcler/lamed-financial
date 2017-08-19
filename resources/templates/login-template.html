@@ -1,0 +1,17 @@
+<form id="sign-in-form" ng-submit="setData(userData)" name="loginForm">
+
+  <input type="text" class="form-control" name="email"
+         placeholder="E-mail address" autofocus="true"
+         ng-model="userData.email"
+         required tabindex=1/>
+  <br>
+  <br>
+  <input type="password" class="form-control" name="password"
+         ng-model="userData.password" placeholder="Password"
+         required tabindex=2/>
+  <div id="bottom-row">
+    <a id="forgot" href="#" tabindex=4>Forgot your password?</a>
+    <input  class="btn" id="btn-submit" type="submit" value="Sign in"
+            tabindex=3/>
+  </div>
+</form>
