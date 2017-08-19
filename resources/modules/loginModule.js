@@ -1,17 +1,17 @@
 (function() {
     "use strict";
 
-    var loginData = {
-        email: "",
-        password: ""
-    };
-
     angular.module("loginModule", []);
 
     angular.module("loginModule").directive("loginTemplate", function (){
         return {
-            templateUrl: "templates/login-template.html",
+            templateUrl: "resources/templates/login-template.html",
             controller: function($scope) {
+                var loginData = {
+                    email: "",
+                    password: ""
+                };
+
                 $scope.Model = loginData;
 
                 $scope.setData = function(data) {
