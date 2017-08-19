@@ -8,7 +8,8 @@ var loginData = {
 
     angular.module("loginApp", []);
 
-    angular.module("loginApp").controller("LoginController", function($scope) {
+    angular.module("loginApp").
+    controller("LoginController", function($scope) {
         $scope.Model = loginData;
 
         $scope.setData = function(data) {
