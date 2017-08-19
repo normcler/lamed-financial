@@ -2,13 +2,21 @@
 // @larc-font: 'Marcellus SC', serif;
 
 .larc-color {
-    background-color: DarkSlateGray;
+    background-color: DarkSlategray;
     color: Gold;
 }
 
 .larc-color-reversed {
     background-color: Gold;
     color: DarkSlateGray;
+}
+
+#page-container {
+    margin: 2em 0 0 2em;
+    box-sizing: border-box;
+    font-family: @larc-font;
+    font-weight: 600;
+    max-width: 560px;
 }
 
 .larc-theme {
@@ -40,12 +48,35 @@ main {
     color: black;
 }
 
+.panel-heading h3 {
+    font-size: 2em;
+}
+
 #subscribe-form {
     display: flex;
     flex-direction: column;
     margin: auto;
-    span {
-        margin-top: 2rem;
-        display: inline-block;
-    }
+}
+
+.form-control {
+    font-size: 1.2em;
+    display: block;
+    width: 80%;
+    padding: 1em;
+}
+
+#bottom-row {
+    display: flex;
+    margin-top: 2em;
+    width: 80%;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+       #larc-name {
+           display: none;
+       }
+       #larc-abbr {
+           margin: 0em auto;
+       }
 }

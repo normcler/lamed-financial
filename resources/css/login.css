@@ -1,5 +1,5 @@
 .larc-color {
-  background-color: DarkSlateGray;
+  background-color: DarkSlategray;
   color: Gold;
 }
 .larc-color-reversed {
@@ -18,7 +18,7 @@
   padding: 0.1em 0.4em;
 }
 .nav > li > a:hover {
-  background-color: DarkSlateGray;
+  background-color: DarkSlategray;
   color: Gold;
 }
 .nav > li:hover {
@@ -32,7 +32,7 @@
   max-width: 560px;
 }
 .larc-theme {
-  background-color: DarkSlateGray;
+  background-color: DarkSlategray;
   color: Gold;
   font-family: 'Bellefair', serif;
   font-size: 2em;
@@ -76,7 +76,7 @@
 }
 .btn {
   width: 20%;
-  background-color: DarkSlateGray;
+  background-color: DarkSlategray;
   color: Gold;
   font-family: 'Bellefair', serif;
   font-weight: bold;
@@ -127,7 +127,6 @@ footer > span {
   display: block;
   width: 80%;
   padding: 1em;
-  border-radius: 2em;
 }
 @media screen and (max-width: 600px) {
   #larc-name {
