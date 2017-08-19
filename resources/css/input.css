@@ -1,14 +1,14 @@
 .larc-color {
-  background-color: FireBrick;
-  color: Goldenrod;
+  background-color: DarkSlateGray;
+  color: Gold;
 }
 .larc-color-reversed {
-  background-color: Goldenrod;
-  color: FireBrick;
+  background-color: Gold;
+  color: DarkSlateGray;
 }
 #lamed-banner {
-  background-color: FireBrick;
-  color: Goldenrod;
+  background-color: DarkSlateGray;
+  color: Gold;
   font-family: 'Bellefair', serif;
   font-size: 2em;
   padding: 0.4em;
@@ -16,8 +16,8 @@
   border-radius: 0.5em;
 }
 #lamed-banner #larc-abbr {
-  background-color: Goldenrod;
-  color: FireBrick;
+  background-color: Gold;
+  color: DarkSlateGray;
   margin: auto;
   border: 0.01px solid white;
   padding: 0.2em;
@@ -62,8 +62,8 @@ div.tr {
 }
 .btn {
   width: 20%;
-  background-color: Goldenrod;
-  color: FireBrick;
+  background-color: Gold;
+  color: DarkSlateGray;
   font-family: 'Bellefair', serif;
   font-weight: bold;
   padding: 0.2em;
@@ -72,7 +72,7 @@ div.tr {
   border-radius: 1em;
 }
 #btn-submit:hover {
-  background-color: FireBrick;
-  color: Goldenrod;
+  background-color: DarkSlateGray;
+  color: Gold;
   box-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.25);
 }

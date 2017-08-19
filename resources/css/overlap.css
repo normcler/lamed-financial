@@ -1,14 +1,14 @@
 .larc-color {
-  background-color: FireBrick;
-  color: Goldenrod;
+  background-color: DarkSlateGray;
+  color: Gold;
 }
 .larc-color-reversed {
-  background-color: Goldenrod;
-  color: FireBrick;
+  background-color: Gold;
+  color: DarkSlateGray;
 }
 #lamed-banner {
-  background-color: FireBrick;
-  color: Goldenrod;
+  background-color: DarkSlateGray;
+  color: Gold;
   font-family: 'Bellefair', serif;
   font-size: 2em;
   padding: 0.4em;
@@ -16,8 +16,8 @@
   border-radius: 0.5em;
 }
 #lamed-banner #larc-abbr {
-  background-color: Goldenrod;
-  color: FireBrick;
+  background-color: Gold;
+  color: DarkSlateGray;
   margin: auto;
   border: 0.01px solid white;
   padding: 0.2em;
@@ -31,7 +31,7 @@ caption {
   font-weigth: 700;
 }
 /*.col-striped col:nth-child(2) {
-    background-color: yellow;
+    background-color: Gold;
 }*/
 thead tr {
   height: 3em;
