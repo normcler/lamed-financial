@@ -1,9 +1,9 @@
 <form id="sign-in-form" ng-submit="setData(userData)" name="loginForm">
 
-  <input type="text" class="form-control" name="email"
-         placeholder="E-mail address" autofocus="true"
+  <input type="email" class="form-control" name="email"
+         placeholder="E-mail address"
          ng-model="userData.email"
-         required tabindex=1/>
+         autofocus required tabindex=1/>
   <br>
   <br>
   <input type="password" class="form-control" name="password"

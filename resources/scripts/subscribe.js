@@ -1,6 +1,6 @@
 var subscriberData = {
     lastName: "",
-    firstName: ::,
+    firstName: "",
     email: "",
     password: ""
 };
@@ -10,7 +10,7 @@ var subscriberData = {
 
     angular.module("subscribeApp", []);
 
-    angular.module("subscribeApp").controller("LoginController", function($scope) {
+    angular.module("subscribeApp").controller("SubscribeController", function($scope) {
         $scope.Model = subscriberData;
 
         $scope.setData = function(data) {
