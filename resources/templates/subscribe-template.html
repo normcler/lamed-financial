@@ -25,8 +25,9 @@
          name="confirmPassword" ng-model="Model.confirmPassword"
          placeholder="Confirm password"
          required tabindex=5
-         ng-class="{'red-background': (!validConfirm() &&
-                   subscribeForm.confirmPassword.$dirty)}" />
+         ng-class="{'red-background': !passwordValid}"
+         ng-change="validConfirm()" />
+         <!-- ng-class="{'red-background': (!validConfirm())}"/>-->
   <br>
   <div ng-messages="subscriberData.confirmPassword.$error"
        ng-message-include="messages.html">

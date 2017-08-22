@@ -21,10 +21,16 @@ var subscriberData = {
                     $scope.Model = data;
                 };
 
+                $scope.passwordValid = true;
+
                 $scope.validConfirm = function () {
-                    return subscriberData.password ===
-                        subscriberData.confirmPassword;
-                };
+                    if (subscriberData.password ===
+                        subscriberData.confirmPassword) {
+                        $scope.passwordValid = true;
+                    } else {
+                        $scope.passwordValid = false;
+                    }
+                }
             }
         };
     });
