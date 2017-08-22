@@ -91,6 +91,10 @@ main {
     margin: 0em auto;
   }
 }
+/*.confirmInput:focus {
+    border: 0px solid black;
+    box-shadow: none;
+}*/
 .red-background {
   border-color: red;
   outline: 0;

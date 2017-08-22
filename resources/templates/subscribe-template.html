@@ -24,9 +24,10 @@
   <input type="password" class="form-control"
          name="confirmPassword" ng-model="Model.confirmPassword"
          placeholder="Confirm password"
-         required tabindex=5
-         ng-class="{'red-background': !passwordValid}"
-         ng-change="validConfirm()" />
+         ng-class="{'red-background': !passwordValid, 
+                   'form-control': passwordValid}"
+         ng-change="validConfirm()"
+         required tabindex=5 />
          <!-- ng-class="{'red-background': (!validConfirm())}"/>-->
   <br>
   <div ng-messages="subscriberData.confirmPassword.$error"

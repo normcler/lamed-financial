@@ -24,8 +24,8 @@ var subscriberData = {
                 $scope.passwordValid = true;
 
                 $scope.validConfirm = function () {
-                    if (subscriberData.password ===
-                        subscriberData.confirmPassword) {
+                    if ($scope.Model.password ===
+                        $scope.Model.confirmPassword) {
                         $scope.passwordValid = true;
                     } else {
                         $scope.passwordValid = false;
