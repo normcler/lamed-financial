@@ -1,0 +1,39 @@
+<form id="subscribe-form"
+      ng-submit="setData(subscriberData)" name="subscribeForm">
+
+  <input type="text" class="form-control" name="firstName"
+         placeholder="First Name" autofocus="true"
+         ng-model="Model.firstName"
+         autofocus required tabindex=1/>
+  <br>
+  <input type="text" class="form-control" name="lastName"
+         placeholder="First Name" autofocus="true"
+         ng-model="Model.lastName"
+         required tabindex=2/>
+  <br>
+  <input type="email" class="form-control" name="email"
+         placeholder="E-mail address"
+         ng-model="Model.email"
+         required tabindex=3/>
+  <br>
+  <input type="password" class="form-control" name="password"
+         ng-model="Model.password" placeholder="Password"
+         required tabindex=4/>
+  <div>{{Model.password}}</div>
+  <br>
+  <input type="password" class="form-control"
+         name="confirmPassword" ng-model="Model.confirmPassword"
+         placeholder="Confirm password"
+         required tabindex=5
+         ng-class="{'red-background': (!validConfirm() &&
+                   subscribeForm.confirmPassword.$dirty)}" />
+  <br>
+  <div ng-messages="subscriberData.confirmPassword.$error"
+       ng-message-include="messages.html">
+  </div>
+  
+  <div id="bottom-row">
+    <input  class="btn" id="btn-submit" type="submit" value="Next"
+            tabindex=6/>
+  </div>
+</form>

@@ -1,0 +1,48 @@
+<form id="payment-form"
+      ng-submit="setData(paymentData)" name="paymentForm">
+
+  <select class="form-control" name="card-selector"
+          required autofocus tabindex=1>
+  </select>
+
+  <input type="text" class="form-contol" name="cardNumber1" class="card-number"
+         ng-model="paymentData.cardNumber1"
+         autofocus required tabindex=1/>
+  <br>
+  <input type="text" class="form-contol" name="cardNumber2" class="card-number"
+         ng-model="paymentData.cardNumber2"
+         autofocus required tabindex=1/>
+  <br>
+  <input type="text" class="form-contol" name="cardNumber3" class="card-number"
+         ng-model="paymentData.cardNumber2"
+         autofocus required tabindex=1/>
+  <br>
+  <input type="text" class="form-contol" name="cardNumber4" class="card-number"
+         ng-model="paymentData.cardNumber3"
+         autofocus required tabindex=1/>
+  <br>
+
+  <input type="text" class="form-contol" name="lastName"
+         placeholder="First Name" autofocus="true"
+         ng-model="paymentData.lastName"
+         required tabindex=2/>
+  <br>
+  <input type="email" class="form-contol" name="email"
+         placeholder="E-mail address"
+         ng-model="paymentData.email"
+         required tabindex=3/>
+  <br>
+  <input type="password" class="form-contol" name="password"
+         ng-model="paymentData.password" placeholder="Password"
+         required tabindex=4/>
+  <br>
+  <input type="password" class="form-contol" 
+         name="password" ng-model="paymentData.password"
+         placeholder="Confirm password"
+         required tabindex=5/>
+  
+  <div id="bottom-row">
+    <input  class="btn" id="btn-submit" type="submit" value="Next"
+            tabindex=6/>
+  </div>
+</form>

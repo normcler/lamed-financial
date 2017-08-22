@@ -7,12 +7,16 @@
         return {
             templateUrl: "resources/templates/login-template.html",
             controller: function($scope) {
-                var loginData = {
+                /*var loginData = {
+                    email: "",
+                    password: ""
+                };*/
+
+                //$scope.Model = loginData;
+                $scope.Model = {
                     email: "",
                     password: ""
                 };
-
-                $scope.Model = loginData;
 
                 $scope.setData = function(data) {
                     $scope.Model = data;

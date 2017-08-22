@@ -63,6 +63,26 @@ main {
   width: 80%;
   justify-content: flex-end;
 }
+.btn {
+  width: 20%;
+  background-color: DarkSlategray;
+  color: Gold;
+  font-family: 'Bellefair', serif;
+  font-weight: bold;
+  padding: 0.2em;
+  margin-top: 1em;
+  margin-right: 20%;
+  border-radius: 1em;
+}
+#btn-submit {
+  font-size: 1.8em;
+}
+#btn-submit:hover,
+#btn-submit:focus {
+  background-color: Gold;
+  color: DarkSlateGray;
+  box-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.25);
+}
 @media screen and (max-width: 600px) {
   #larc-name {
     display: none;
@@ -70,4 +90,8 @@ main {
   #larc-abbr {
     margin: 0em auto;
   }
+}
+.red-background {
+  border-color: red;
+  outline: 0;
 }

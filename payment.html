@@ -1,6 +1,6 @@
 <html lang="en">
   <head>
-    <title>LARC | Subscribe</title>
+    <title>LARC | Payment</title>
     <meta charset="utf-8"/>
 
     <!-- Bootstrap links-->
@@ -15,7 +15,7 @@
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
           crossorigin="anonymous" />
 
-    <link href="./resources/css/subscribe.css" type="text/css" rel="stylesheet"/>
+    <link href="./resources/css/payment.css" type="text/css" rel="stylesheet"/>
   </head>
   <body>
     <div class="larc-theme" class="jumbotron">
@@ -23,16 +23,16 @@
       <span id="larc-name">Lamed Asset Research Consultants</span>
     </div>
 
-    <div class="container-fluid" id="panel-container" ng-app="subscribeApp">
+    <div class="container-fluid" id="panel-container" ng-app="paymentApp">
       <div class="row">
         <div class="col-xs-offset-2 col-xs-5">
           <div class = "panel" id="page-container">
             <div class="panel-heading">
-              <h3 class="panel-title">Subscribe to larc.com</h3>
+              <h3 class="panel-title">Payment Information</h3>
             </div>
 
             <div class="panel-body">
-              <subscribe-template></subscribe-template>
+              <payment-template></payment-template>
             </div>
           </div>
         </div>
@@ -55,9 +55,10 @@
        crossorigin="anonymous"></script>
 
     <!-- Angular -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script
+       src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js">
+    </script>
 
-    <script src="./resources/modules/subscribeModule.js"></script>
-    <script src="./resources/scripts/subscribe.js"></script>
+    <script src="./resources/modules/paymentModule.js"></script>
+    <script src="./resources/scripts/payment.js"></script>
   </body>
-</html>
