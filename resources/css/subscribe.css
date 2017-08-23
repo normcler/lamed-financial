@@ -91,11 +91,16 @@ main {
     margin: 0em auto;
   }
 }
-/*.confirmInput:focus {
-    border: 0px solid black;
-    box-shadow: none;
-}*/
 .red-background {
-  border-color: red;
+  border: 1px solid red;
+  border-radius: 4px;
   outline: 0;
+  font-size: 1.2em;
+  display: block;
+  width: 80%;
+  height: 34px;
+  padding: 1em;
+  background-color: #fff;
+  color: #555;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
